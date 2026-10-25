@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </head>
+  <style>
+    body {
+      margin-top: 60px;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .card {
+      background-color: bisque;
+      margin: auto;
+      padding: 50px;
+      border-radius: 20px;
+      border: solid 2px black;
+      width: 1000px;
+      text-align: center;
+    }
+
+    button {
+      background-color: chocolate;
+      color: white;
+      padding: 20px 20px;
+      border: none;
+      border-radius: 10px;
+    }
+
+    table {
+      margin: 0 auto;
+      width: 100%;
+      text-align: center;
+    }
+
+    .info {
+      background-color: burlywood;
+      height: 170px;
+      text-align: left;
+      padding: 20px;
+      border-radius: 20px;
+    }
+
+    .course {
+      padding: 20px 20px;
+    }
+
+    .choose {
+      background-color: burlywood;
+      height: 130px;
+      text-align: left;
+      padding: 20px;
+      border-radius: 20px;
+    }
+
+    .list {
+      text-align: left;
+    }
+
+    #mouse {
+      background-color: goldenrod;
+      height: 20px;
+      padding: 20px;
+      border-radius: 20px;
+    }
+
+    #sele {
+      background-color: goldenrod;
+      height: 20px;
+      padding: 20px;
+      border-radius: 20px;
+    }
+
+    #ca {
+      background-color: goldenrod;
+      height: 20px;
+      padding: 20px;
+      border-radius: 20px;
+    }
+  </style>
+
+  <body>
+    <div class="card">
+      <h1 id="title">My Student Profile</h1>
+      <p class="intro">Welcome to my interactive profile</p>
+
+      <div class="info">
+        <h1>Student Information</h1>
+        <p>Name: Ralph Angel Amamangpang</p>
+        <p class="courses">Course: BSIT</p>
+        <p>Year Level: 3rd Year</p>
+      </div>
+      <h3 id="mouse">Mouse left the title change button</h3>
+
+      <button id="btn">Change Title</button>
+
+      <button id="btn2">Hide Profile</button>
+
+      <button id="btn3">Show Profile</button>
+      <br /><br />
+
+      <div class="choose">
+        <h1>Choose your course</h1>
+        <select id="course" style="width: 100%; height: 50px">
+          <option value="" disabled selected>Select Course</option>
+          <option value="Course: BSIT">BSIT</option>
+          <option value="Course: BSCS">BSCS</option>
+          <option value="Course: BSHM">BSHM</option>
+        </select>
+      </div>
+      <h3 id="sele">No courses selected...</h3>
+
+      <div class="list">
+        <h1>Student List</h1>
+        <table border="2" id="table">
+          <tr>
+            <th>No.</th>
+            <th>Name</th>
+            <th>Course</th>
+            <th>Year Level</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Juan</td>
+            <td>BSIT</td>
+            <td>3rd Year</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Maria</td>
+            <td>BSCS</td>
+            <td>3rd Year</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Pedro</td>
+            <td>BSCS</td>
+            <td>2nd Year</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Ana</td>
+            <td>BSIT</td>
+            <td>3nd Year</td>
+          </tr>
+        </table>
+        <br />
+      </div>
+
+      <button id="applyodd">Apply/Odd row</button>
+      <button id="applyeven">Apply/Even row</button>
+      <button id="btnhide">Hide</button>
+      <button id="btnshow">Show</button>
+
+      <h3 id="ca">Choose Action</h3>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

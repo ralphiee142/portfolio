@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>RegistrationForm</title>
+</head>
+<body bgcolor="lightblue" style="margin: 0;">
+    <header style="background-color: aqua; text-align: center; padding: 50px;">
+        <h1>Student Registration Form</h1>
+    </header>
+    
+    <nav style="text-align: center; background-color: aquamarine; display: flex; justify-content: center; gap: 100px; padding: 30px;">
+        <a href="home.html">Home</a>
+        <a href="registrationform.html">Registration Form</a>
+        <a href="gradetable.html">Grade Table</a>
+        <a href="myprofile.html">My Profile</a>
+    </nav>
+
+    <div style="display: flex;">
+        <section style="background-color: cadetblue; text-align: left; padding: 100px; width: 100%;">
+            <form>
+                FirstName:<br> <input type="text" name="first_name"/><br>
+                LastName:<br><input type="text" name="first_name"/><br>
+                Email: <br><input type="text" name="email"/><br><br>
+                Gender: <br><input type="radio" name="gender" value="Male">Male
+                <input type="radio" name="gender" value="Female">Female
+                <br><br>
+                Course: <br>
+                <select name="COURSE">
+                <option value="BSIT" selected>BSIT</option>
+                <option value="BSHM" selected>BSHM</option>
+                <option value="BSTM" selected>BSTM</option>
+                </select>
+                <br><br>
+                SKILLS:<br>
+                <input type="radio" name="skills" value="html">HTML
+                <input type="radio" name="skills" value="CSS">CSS
+                <input type="radio" name="skills" value="JavaScript">JavaScript
+                <br><br>
+                Upload Picture<br>
+                <input type="button" name="Choose File" value="Choose File"/>No file chosen
+                <br><br>
+                Address<br>
+                <textarea rows="5" cols="50" name="Address"></textarea><br>
+                <input type="button" name="Submit" value="Submit"/>
+                <input type="button" name="Reset" value="Reset"/>
+            </form>
+        </section>
+    </div>
+
+    <footer style="background-color: aquamarine; display: flex; justify-content: center; padding: 30px;">
+        <p>🤣ANOOOOO SIGIEEEEE😎</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: aqua;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.menu {
+    background-color: aquamarine;
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 20%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.bg-light {
+    background-color: aquamarine;
+}
+
+.section-style {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 225, 255, 0.95);
+    z-index: 1000%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.foot {
+    background-color: aquamarine;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    
+}
+
+.nav-menu li a {
+    color: brown;
+    transition: 0.3s;
+}
+
+.nav-menu li a:hover {
+    color: blue;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    position: relative;
+    gap: 100px;
+    background-color: aquamarine;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.button {
+    background-color: cadetblue;
+}
+
+.menu-grind {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.card-menu {
+    background: #fff;
+    border-radius: 12px;
+}
+
+.menu-info {
+    padding: 20px;
+}
+
+.card-menu:hover {
+    transform: scale(2.2);
+}
+
+.menu-info h4 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.price {
+    color: cornflowerblue;
+}
+.logo{
+    background-image: url('food.jpg');
+    color:white;
+}
+.buttonsmall:hover{
+    background:aqua;
+}
+.contact-flex{
+    background-color: aquamarine;
+}
+.about-flex{
+    background-color: #fff;
+}

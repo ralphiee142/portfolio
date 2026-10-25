@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <div class="logo">My Portfolio</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <h1>Hello Everyone</h1>
+        <p>Online Portfolio for BS Information Technology</p>
+        <p class="typing-line">
+          <span id="typing"></span> <span class="cursor">|</span>
+        </p>
+        <a href="#projects" class="btn">View My Projects</a>
+      </div>
+      <div class="hero-image" onclick="flipProfile()">
+        <p class="click-text">Click the Profile Picture</p>
+
+        <div class="profile-card" id="profileCard">
+          <!-- FRONT -->
+          <div class="profile-side profile-front">
+            <img src="profile-front.png" alt="Profile Picture" />
+          </div>
+
+          <!-- BACK -->
+          <div class="profile-side profile-back">
+            <img src="profile-back.png" alt="Profile Picture" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+      <h2>About Me</h2>
+
+      <p class="about-intro">
+        I am a BSIT 3rd year student at Pambayang Dalubhasaan ng Marilao who
+        enjoys building websites using HTML, CSS and JavaScript. I am
+        continuously improving my web development skills and learning new
+        technologies.
+      </p>
+
+      <div class="about-grid">
+        <div class="about-box">
+          <h3>🎓 Education</h3>
+          <p>
+            Currently taking Bachelor of Science in Information Technology and
+            developing my knowledge in web development, programming, networking,
+            and information technology.
+          </p>
+        </div>
+
+        <div class="about-box">
+          <h3>💻 What I Do</h3>
+          <p>
+            I enjoy creating simple and interactive websites using HTML, CSS,
+            and JavaScript. I also enjoy working on school projects that allow
+            me to practice my technical skills.
+          </p>
+        </div>
+
+        <div class="about-box">
+          <h3>🎯 My Goal</h3>
+          <p>
+            My goal is to continuously improve my programming and web
+            development skills and become a knowledgeable IT professional in the
+            future.
+          </p>
+        </div>
+
+        <div class="about-box">
+          <h3>✨ My Interests</h3>
+          <p>
+            Outside of coding, I enjoy drawing, playing basketball, playing
+            online games, and watching K-dramas.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="skills">
+      <h2>My Skills and Hobbies</h2>
+      <div class="skills-grid">
+        <div class="skill-box">DRAWING</div>
+        <div class="skill-box">MAGMAHAL</div>
+        <div class="skill-box">HTML</div>
+        <div class="skill-box">BASKETBALL</div>
+        <div class="skill-box">PLAYING ONLINE GAMES</div>
+        <div class="skill-box">CSS</div>
+        <div class="skill-box">WATCHING K-DRAMA</div>
+      </div>
+    </section>
+
+    <!-- PROJECTS / ACTIVITIES SECTION -->
+    <section id="projects" class="activities">
+      <h2>My Projects</h2>
+
+      <!-- Midterm / Finals buttons -->
+      <div class="term-tabs">
+        <button class="term-btn" data-target="midterm">Midterm</button>
+        <button class="term-btn" data-target="finals">Finals</button>
+      </div>
+
+      <p class="term-hint" id="termHint">Choose to see the activities.</p>
+
+      <!-- MIDTERM -->
+      <div class="activities-grid term-panel" id="midterm">
+        <a
+          href="midterm_activities/lab1/homepage.html"
+          target="_blank"
+          class="activity-card"
+        >
+          <img src="act1.png" alt="Laboratory Activity 1" />
+          <div class="activity-info">
+            <h3>Laboratory Activity 1</h3>
+            <p>Purely HTML code.</p>
+          </div>
+        </a>
+
+        <a
+          href="midterm_activities/lab2/home.html"
+          target="_blank"
+          class="activity-card"
+        >
+          <img src="act2.png" alt="Laboratory Activity 2" />
+          <div class="activity-info">
+            <h3>Laboratory Activity 2</h3>
+            <p>Website with forms and tables created using HTML and CSS.</p>
+          </div>
+        </a>
+
+        <a
+          href="midterm_activities/lab3/home.html"
+          target="_blank"
+          class="activity-card"
+        >
+          <img src="act3.png" alt="Laboratory Activity 3" />
+          <div class="activity-info">
+            <h3>Laboratory Activity 3</h3>
+            <p>Introduction to transitions and external CSS.</p>
+          </div>
+        </a>
+
+        <a
+          href="midterm_activities/lab4/home.html"
+          target="_blank"
+          class="activity-card"
+        >
+          <img src="act4.png" alt="Laboratory Activity 4" />
+          <div class="activity-info">
+            <h3>Laboratory Activity 4</h3>
+            <p>Simple food-ordering landing page</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- FINALS -->
+      <div class="activities-grid term-panel" id="finals">
+        <a
+          href="final_activities/lab1/prc.html"
+          target="_blank"
+          class="activity-card"
+        >
+          <img src="final1.png" alt="Finals Laboratory Activity 1" />
+          <div class="activity-info">
+            <h3>Laboratory Activity 1</h3>
+            <p>Lagay mo dito description.</p>
+          </div>
+        </a>
+
+        <a
+          href="final_activities/lab2/index.html"
+          target="_blank"
+          class="activity-card"
+        >
+          <img src="final2.png" alt="Finals Laboratory Activity 2" />
+          <div class="activity-info">
+            <h3>Laboratory Activity 2</h3>
+            <p>Lagay mo dito description.</p>
+          </div>
+        </a>
+
+        <a
+          href="final_activities/lab3/index.html"
+          target="_blank"
+          class="activity-card"
+        >
+          <img src="final3.png" alt="Finals Laboratory Activity 2" />
+          <div class="activity-info">
+            <h3>Laboratory Activity 3</h3>
+            <p>Lagay mo dito description.</p>
+          </div>
+        </a>
+
+        <a
+          href="final_activities/lab4/index.html"
+          target="_blank"
+          class="activity-card"
+        >
+          <img src="final4.png" alt="Finals Laboratory Activity 2" />
+          <div class="activity-info">
+            <h3>Laboratory Activity 4</h3>
+            <p>Lagay mo dito description.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <p>Email: ralphiee142@gmail.com</p>
+      <p>Phone: 0935-518-5657</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>&copy; 2026 PDM Student | Student Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
